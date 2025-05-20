@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 import cgi
 import math
 
@@ -13,7 +14,9 @@ division = squareRoot / a
 multiplication = division * 10
 result = b + multiplication
 
-print("Content-Type: text/html\n")
+print("Content-Type: text/html")
+print()
+
 print("""
 <html>
 <head>
@@ -24,15 +27,15 @@ print("""
 Carlos_MatamorosVivas
 
 <div>
-Step 1: c = {:.1f} , c³ = {:.1f}
+Step 1: c = {:.1f} , c³ = {:.1f}<br>
 Step 2: √(c³) = {:.1f}
-Step 3: {:.1f} / {:.1f} = {:.1f}
+Step 3: {:.1f} / {:.1f} = {:.1f}<br>
 Step 4: {:.1f} * 10 = {:.1f}
-Step 5: {:.1f} + {:.1f} = {:.1f}
+Step 5: {:.1f} + {:.1f} = {:.1f}<br>
 </div>
       
 Result: {:.1f}
       
 </body>
 </html>
-""".format(result, c, cCubed, squareRoot, squareRoot, a, division, division, multiplication, multiplication, b, result))
+""".format(c, cCubed, squareRoot, squareRoot, a, division, division, multiplication, multiplication, b, result))
