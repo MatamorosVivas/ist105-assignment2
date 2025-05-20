@@ -5,7 +5,7 @@
 </head>
 <body>
     <h2>Enter values</h2>
-    <form method="get" action="calculate.py">
+    <form method="get" action="/cgi-bin/calculate.py">
         a: <input type="number" name="a"><br><br>
         b: <input type="number" name="b"><br><br>
         c: <input type="number" name="c"><br><br>
